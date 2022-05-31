@@ -1,41 +1,13 @@
 package com.duing.config;
 
+import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
-
+@Data
 @ConfigurationProperties(prefix = "food")
 public class FoodConfig {
     private String rice;
     private String meat;
+    private String[] sauce;
 
-    @Override
-    public String toString() {
-        return "FoodConfig{" +
-                "rice='" + rice + '\'' +
-                ", meat='" + meat + '\'' +
-                '}';
-    }
 
-    public String getRice() {
-        return rice;
-    }
-
-    public void setRice(String rice) {
-        this.rice = rice;
-    }
-
-    public String getMeat() {
-        return meat;
-    }
-
-    public void setMeat(String meat) {
-        this.meat = meat;
-    }
-
-    public FoodConfig() {
-    }
-
-    public FoodConfig(String rice, String meat) {
-        this.rice = rice;
-        this.meat = meat;
-    }
 }

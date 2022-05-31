@@ -1,0 +1,23 @@
+#server:
+#  port: 8010
+
+food:
+  meat: 烤肉
+  rice: 拌饭
+  sauce:
+    - 咖喱
+    - 牛肉
+#spring:
+#   profiles:
+#     active: dev
+#---
+#server:
+#  port: 8096
+#spring:
+#  profiles: dev
+#
+#---
+#spring:
+#  profiles: prod
+#server:
+#  port: 8097
