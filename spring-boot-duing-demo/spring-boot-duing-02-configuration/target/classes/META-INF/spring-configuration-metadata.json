@@ -4,6 +4,11 @@
       "name": "food",
       "type": "com.duing.config.FoodConfig",
       "sourceType": "com.duing.config.FoodConfig"
+    },
+    {
+      "name": "vegetable",
+      "type": "com.duing.config.VegetablesConfig",
+      "sourceType": "com.duing.config.VegetablesConfig"
     }
   ],
   "properties": [
@@ -16,6 +21,26 @@
       "name": "food.rice",
       "type": "java.lang.String",
       "sourceType": "com.duing.config.FoodConfig"
+    },
+    {
+      "name": "food.sauce",
+      "type": "java.lang.String[]",
+      "sourceType": "com.duing.config.FoodConfig"
+    },
+    {
+      "name": "vegetable.eggplant",
+      "type": "java.lang.String",
+      "sourceType": "com.duing.config.VegetablesConfig"
+    },
+    {
+      "name": "vegetable.greenpeper",
+      "type": "java.lang.String",
+      "sourceType": "com.duing.config.VegetablesConfig"
+    },
+    {
+      "name": "vegetable.potato",
+      "type": "java.lang.String",
+      "sourceType": "com.duing.config.VegetablesConfig"
     }
   ],
   "hints": []

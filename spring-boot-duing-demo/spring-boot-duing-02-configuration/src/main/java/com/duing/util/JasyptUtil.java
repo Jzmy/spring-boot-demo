@@ -11,5 +11,6 @@ public class JasyptUtil {
        String password = basicTextEncryptor.encrypt("root123");
         System.out.println(username);
         System.out.println(password);
+
     }
 }

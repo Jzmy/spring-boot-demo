@@ -1,6 +1,5 @@
 #server:
 #  port: 8010
-
 food:
   meat: 烤肉
   rice: 拌饭
@@ -20,4 +19,11 @@ food:
 #spring:
 #  profiles: prod
 #server:
+jasypt:
+  encryptor:
+    password: 123456!@#
+
+info:
+  username: ENC(xCVQt5QTjiQ/OXRxmWTu9Q==)
+  password: ENC(GQ2KLM1wFsUWfFA5au9JkQ==)
 #  port: 8097

@@ -16,6 +16,10 @@ public class JsonController {
 //    private String rice;
 //    @Value("${food.meat}")
 //    private String meat;
+    @Value("${info.username}")
+    private String username;
+    @Value("${info.password}")
+    private String password;
     @Autowired
     private FoodConfig foodConfig ;
 @RequestMapping("/json")
@@ -35,5 +39,14 @@ public class JsonController {
      vegetables.setEggplant(vegetablesConfig.getEggplant());
      vegetables.setGreenpeper(vegetablesConfig.getGreenpeper());
     return vegetables;
+ }
+
+ @RequestMapping("/jasypt")
+ public String jasyptUserPassword(){
+     StringBuilder stringBuilder = new StringBuilder();
+     stringBuilder.append(username);
+     stringBuilder.append("\t");
+     stringBuilder.append(password);
+     return stringBuilder.toString();
  }
 }
